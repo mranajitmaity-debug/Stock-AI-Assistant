@@ -156,7 +156,7 @@ streamlit run app.py
 The application will launch at:
 
 ```text
-http://localhost:8501
+http://localhost:___
 ```
 
 ---
