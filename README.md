@@ -11,15 +11,16 @@ Displays current stock price and company information
 📈 Technical Indicators
 Relative Strength Index (RSI)
 Moving Average Convergence Divergence (MACD)
-Momentum analysis
-Trend evaluation
+Momentum Analysis
+Trend Evaluation
 📉 Interactive Stock Charts
 Candlestick chart visualization
 One-year historical stock data
 Interactive Plotly dashboard
 🤖 AI-Powered Analysis
-Uses Google Gemini AI for stock insights
-Generates:
+
+Powered by Google Gemini AI to generate:
+
 Trend analysis
 Momentum evaluation
 Risk assessment
@@ -52,16 +53,16 @@ AI-Stock-Market-Assistant/
 ├── app.py
 ├── requirements.txt
 ├── README.md
-└── .gitignore
+├── .gitignore
 ⚙️ Installation
-1. Clone the Repository
+1️⃣ Clone the Repository
 git clone https://github.com/mranajitmaity-debug/AI-Stock-Market-Assistant.git
 cd AI-Stock-Market-Assistant
-2. Install Dependencies
+2️⃣ Install Dependencies
 pip install -r requirements.txt
 📦 Requirements
 
-Create a requirements.txt file containing:
+Create a requirements.txt file with:
 
 streamlit
 yfinance
@@ -69,66 +70,79 @@ plotly
 google-generativeai
 pandas
 🔑 Configure Gemini API Key
+Option 1: Streamlit Secrets (Recommended)
 
-Replace the API key in the code:
+Create:
 
+.streamlit/secrets.toml
 GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
 
-Or preferably use Streamlit Secrets:
+Load it in your application:
 
-# .streamlit/secrets.toml
-
-GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
-
-And load it using:
+import streamlit as st
 
 GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+Option 2: Directly in Code
+GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
+
+⚠️ Avoid hardcoding API keys in public repositories.
+
 ▶️ Run the Application
 streamlit run app.py
 
-The application will open in your browser at:
+The application will launch at:
 
-http://localhost:____
+http://localhost:_____
 📋 Supported Stocks
-Indian Stocks
-TCS
-Infosys
-Reliance
-HDFC Bank
-ICICI Bank
-SBI
-Wipro
-US Stocks
-Apple (AAPL)
-Microsoft (MSFT)
-Google (GOOGL)
-Amazon (AMZN)
-Tesla (TSLA)
-Nvidia (NVDA)
+🇮🇳 Indian Stocks
+Company	Ticker
+TCS	TCS.NS
+Infosys	INFY.NS
+Reliance	RELIANCE.NS
+HDFC Bank	HDFCBANK.NS
+ICICI Bank	ICICIBANK.NS
+SBI	SBIN.NS
+Wipro	WIPRO.NS
+🇺🇸 US Stocks
+Company	Ticker
+Apple	AAPL
+Microsoft	MSFT
+Google	GOOGL
+Amazon	AMZN
+Tesla	TSLA
+Nvidia	NVDA
 
 You can also enter custom ticker symbols.
 
 📊 AI Analysis Output
 
-The AI generates insights including:
+The AI-generated report includes:
 
-Market Trend
-Technical Momentum
-RSI Interpretation
-MACD Signals
-Risk Assessment
-Short-Term Outlook
+📈 Market Trend Analysis
+🚀 Technical Momentum Evaluation
+📊 RSI Interpretation
+📉 MACD Signal Analysis
+⚠️ Risk Assessment
+🔮 Short-Term Outlook
+
 ⚠️ Disclaimer
 
-This project is intended for educational and informational purposes only. The AI-generated analysis should not be considered financial or investment advice. Always conduct your own research and consult a qualified financial advisor before making investment decisions.
+This project is intended for educational and informational purposes only.
+
+The AI-generated analysis should not be considered financial or investment advice. Always conduct your own research and consult a qualified financial advisor before making investment decisions.
 
 🌟 Future Enhancements
 Portfolio Tracker
 Stock Price Prediction Models
 News Sentiment Analysis
 Multiple Timeframe Charts
-Technical Indicator Library
-
+Advanced Technical Indicator Library
+Email & Mobile Notifications
+Backtesting Framework
 👨‍💻 Author
 Ranajit Maity
+
 Developed as an AI-powered Stock Market Assistant using Streamlit, Yahoo Finance, Plotly, and Google Gemini AI.
+
+Connect
+GitHub: https://github.com/mranajitmaity-debug
